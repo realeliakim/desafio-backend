@@ -1,50 +1,50 @@
-## Convergence Works
-Somos a Convergence Works, somos a convergência entre os desafios das empresas e as ideias pra vencê-los. Desenvolvemos plataformas para o mundo digital, com foco em comunicação. Somos especialistas na criação de sites e aplicativos para plataformas de comunicação. Integramos sistema de gestão de conteúdo, aplicativo, disparo de email, solução para clube de assinantes, implantação de editoriais em múltiplas plataformas.
+<p align="center">
+  <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=188096171243220" alt="cworks_logo" height="120"/>
+</p>
+<h1 align="center">
+  Desafio Convergence - Works
+</h1>
 
-## Descrição da vaga
-Conhecimento e habilidades em: 
-+ Frameworks em PHP (Laravel, Symfony, ...)
-+ Inglês Técnico 
-+ Git
-+ Metodologia ágil
-+ Capacidade de trabalhar em equipe, boa comunicação, comprometimento e organização; 
-+ Vontade de aprender novas tecnologias de mercado. 
+<p align="center">
+  <a href="https://www.linkedin.com/in/realeliakim/">
+    <img alt="Linkedin" src="https://img.shields.io/badge/-Eliakim%20Aquino-0e76a8?label=Linkedin&logo=linkedin&style=flat-square"/>
+  </a>
+</p>
 
-## Local
-Vaga 100% remota, empresa de Salvador/BA
+## :page_facing_up: Descrição
 
-## O desafio
-Para avaliar seu desempenho temos um desafio para você.
+Desenvolver um relatório sobre a publicação de notícias. A aplicação deverá consumir a seguinte fonte de dados RSS [https://www.correio24horas.com.br/rss/] e entregar em formato JSON a quantidade e uma lista com o titulo (campo title) das notícias encontradas.
 
-Você deverá fazer um fork deste repositório, e desenvolver um relatório sobre a publicação de notícias. A aplicação deverá consumir a seguinte fonte de dados RSS [https://www.correio24horas.com.br/rss/] e entregar em formato JSON a quantidade e uma lista com o titulo (campo title) das notícias encontradas obedecendo dois critérios:
 
-### Notícias publicadas hoje
-Exemplo de output
-```json
-{	
-	"quantidade": 4,
-	"noticias":["Trabalho remoto monitorado","As aulas da B3 são 100% on-line e gravadas; confira como participar","Do jornalismo para a música: Luana Assiz lança clipe Espelho de Oxum","Em série do Globoplay, talentos se juntam para compor canção coletiva"]
-}
+## :computer: Instalação
+
+```bash
+
+# Instalar todas as dependências do projeto
+$ composer update
+
+# Executar a aplicação
+$ php artisan serve
+
+
 ```
 
-### Notícias filtradas por categoria
-Exemplo de output para *Noticias que pertençam a **"categoria" "tecnoporto"**.* 
-```json
-{
-	"quantidade":1,
-	"noticias":["Trabalho remoto monitorado"]
-}
+## : Endpoints
+
+```bash
+
+# Lista todos os títulos das notícias do dia e imprimi sua quantidade.
+> [GET] /api/noticias
+
+# Lista todas as categorias das notícias.
+> [GET] /api/noticias/categorias
+
+# Lista todas as notícias por categoria.
+> [GET] /noticias/categorias/{categoria}
+
 ```
 
-Você deve descrever no README.md do projeto Git as decisões de implementação que forem relevantes, junto das instruções de como compilar (build) e executar a sua aplicação. Você pode utilizar bibliotecas de código aberto (open source) que acredite serem adequadas, mas por favor tente limitar o uso de ferramentas desnecessárias.
 
-## Critérios de Avaliação
-+ Organização
-+ Semântica
-+ Decisões Técnicas
-+ Ferramentas Utilizadas
-+ Desejável: Testes unitários
+## License
 
- 
-
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
