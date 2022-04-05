@@ -26,10 +26,11 @@ $ composer update
 # Executar a aplicação
 $ php artisan serve
 
-
 ```
 
 ## : Endpoints
+
+Ultilizar Postman ou Insominia para verificar o retorno da API.
 
 ```bash
 
