@@ -26,6 +26,9 @@ $ composer update
 # Executar a aplicação
 $ php artisan serve
 
+#Executa os testes
+$ vendor/bin/phpunit tests/Unit/NewsTest.php
+
 ```
 
 ## : Endpoints
