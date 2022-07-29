@@ -2,7 +2,7 @@
   <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=188096171243220" alt="cworks_logo" height="120"/>
 </p>
 <h1 align="center">
-  Desafio Convergence - Works
+  Convergence - Works
 </h1>
 
 <p align="center">
